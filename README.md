@@ -3,7 +3,10 @@
 
 ## Setup
 
-npm install
+```npm install```
+
+```npm start```
+
 Directory Structure
 
 Write your code in the src directory. When it is compiled, it will be placed in the compiled directory.
@@ -16,8 +19,12 @@ Use the npm run file script to run a file. This will run gulp and then execute t
 
 Make sure you execute files in the compiled directory, not the src directory.
 
+## Dependency
+
+```npm i -S react-redux```
+
 ## Pattern
-npm run file -- compiled/**/[FILENAME]
+```npm run file -- compiled/**/[FILENAME]```
 
 ## Example
-npm run file -- compiled/src/demo.js
+```npm run file -- compiled/src/demo.js```
