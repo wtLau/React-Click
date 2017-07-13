@@ -1,7 +1,7 @@
-### In Class Lab- Using React 
+# In Class Lab- Using React 
 
 
-# Setup
+## Setup
 
 npm install
 Directory Structure
@@ -16,8 +16,8 @@ Use the npm run file script to run a file. This will run gulp and then execute t
 
 Make sure you execute files in the compiled directory, not the src directory.
 
-# Pattern
+## Pattern
 npm run file -- compiled/**/[FILENAME]
 
-# Example
+## Example
 npm run file -- compiled/src/demo.js
