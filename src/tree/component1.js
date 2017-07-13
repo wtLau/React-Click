@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
 
 class Component1 extends Component {
 
@@ -12,4 +13,10 @@ class Component1 extends Component {
   }
 }
 
-export default Component1;
+function mapStateToProps(store) {
+  return {
+    clicks: store.clicks
+  }
+}
+
+export default connect(mapStateToProps)(Component1);

@@ -1,14 +1,17 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+
+import { incrementClicks } from '../redux'
 
 class Component3 extends Component {
 
   handleClick() {
-    console.loge('Clicked')
+    this.props.dispatch(incrementClicks())
   }
 
   render(){
     return (
-      <div>I m #333 { this.state.message }
+      <div>I m #333 
         <button  onClick={() => this.handleClick()}>
           Click Click
         </button>
@@ -17,4 +20,4 @@ class Component3 extends Component {
   }
 }
 
-export default Component3;
+export default connect()(Component3);

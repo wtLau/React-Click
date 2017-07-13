@@ -23,6 +23,8 @@ Make sure you execute files in the compiled directory, not the src directory.
 
 ```npm i -S react-redux```
 
+``` npm install --save redux-devtools-extension```
+
 ## Pattern
 ```npm run file -- compiled/**/[FILENAME]```
 
