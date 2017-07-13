@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 
 class Component3 extends Component {
-  constructor () {
-    super ()
-      this.state= {
-        message: 'Hakuna Matana'
-      }
+
+  handleClick() {
+    console.loge('Clicked')
   }
 
   render(){
     return (
       <div>I m #333 { this.state.message }
-        <button  onClick={() => this.props.handleClick()}>Click Click</button>
+        <button  onClick={() => this.handleClick()}>
+          Click Click
+        </button>
       </div>
     );
   }
